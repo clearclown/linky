@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/qr.css">
+  <link rel="stylesheet" href="styles/copy-button.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="links-container">
+    <h1>Links</h1>
+
+    <!-- GitHub -->
+    <div class="link-item">
+      <img src="./pics/icons/github.svg" alt="GitHub">
+      <a href="https://github.com/clearclown" target="_blank">GitHub</a>
+      <div class="copy-container">
+        <code class="copy-text">clearclown</code>
+        <button class="copy-button" data-copy="clearclown">
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Instagram -->
+    <div class="link-item">
+      <img src="./pics/icons/instagram.svg" alt="Instagram">
+      <a href="https://www.instagram.com/nm_a.normal.man" target="_blank">Instagram</a>
+      <div class="copy-container">
+        <code class="copy-text">nm_a.normal.man</code>
+        <button class="copy-button" data-copy="nm_a.normal.man">
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Twitter (X) -->
+    <div class="link-item">
+      <img src="./pics/icons/twitter.svg" alt="Twitter (X)">
+      <a href="https://twitter.com/arealnormalman" target="_blank">Twitter (X)</a>
+      <div class="copy-container">
+        <code class="copy-text">arealnormalman</code>
+        <button class="copy-button" data-copy="arealnormalman">
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="link-item">
+      <img src="./pics/icons/gmail.svg" alt="Email">
+      <a href="mailto:ablaze_ezalba">E-mail</a>
+      <div class="copy-container">
+        <code class="copy-text">ablaze_ezalba</code>
+        <button class="copy-button" data-copy="ablaze_ezalba">
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Discord -->
+    <div class="link-item">
+      <img src="./pics/icons/discord.svg" alt="Discord">
+      <span>Discord</span>
+      <div class="copy-container">
+        <code class="copy-text">ablaze_ezalba</code>
+        <button class="copy-button" data-copy="ablaze_ezalba">
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- WeChat -->
+    <div class="link-item">
+      <img src="./pics/icons/wechat.svg" alt="WeChat">
+      <a href="https://u.wechat.com/kAIouCJTPBfUk2eGaOGBuJs" target="_blank">WeChat</a>
+      <div class="copy-container">
+        <code class="copy-text">ablaze</code>
+        <button class="copy-button" data-copy="ablaze">
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+      <button class="show-qr-button" data-qr="wechat">Show QR</button>
+    </div>
+
+    <!-- Telegram -->
+    <div class="link-item">
+      <img src="./pics/icons/telegram.svg" alt="Telegram">
+      <a href="https://t.me/clearclown" target="_blank">Telegram</a>
+      <div class="copy-container">
+        <code class="copy-text">clearclown</code>
+        <button class="copy-button" data-copy="clearclown">
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+      <button class="show-qr-button" data-qr="telegram">Show QR</button>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="link-item">
+      <img src="./pics/icons/whatsapp.svg" alt="WhatsApp">
+      <a href="https://wa.me/qr/HTJVWJLHKSOCI1" target="_blank">WhatsApp</a>
+      <div class="copy-container">
+        <code class="copy-text">ablaze</code>
+        <button class="copy-button" data-copy="ablaze">
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+      <button class="show-qr-button" data-qr="whatsapp">Show QR</button>
+    </div>
+
+    <!-- 株式会社 Aida -->
+    <div class="link-item">
+      <img src="./pics/icons/link-icon.svg" alt="株式会社 Aida">
+      <a href="https://aida-clearclowns-projects.vercel.app/" target="_blank">株式会社 Aida</a>
+    </div>
+    <div class="link-item">
+      <img src="./pics/icons/link-icon.svg" alt="My web site">
+      <a href="https://harukahanaoka.com/" target="_blank">Haruka Hanaoka</a>
+    </div>
+  </div>
+
+  <!-- QRコードモーダル -->
+  <div id="qr-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div id="qr-container"></div>
+    </div>
+  </div>
+
+  <script src="js/copy.js"></script>
+  <script src="js/qr-modal.js"></script>
+</body>
+</html>
