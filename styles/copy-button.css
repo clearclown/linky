@@ -102,3 +102,42 @@
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 255, 213, 0.3);
 }
+
+/* 既存のスタイルに追加 */
+
+.copy-container {
+    gap: 0.5rem;
+    padding: clamp(4px, 2vw, 8px) clamp(8px, 3vw, 12px);
+}
+
+@media (max-width: 768px) {
+    .copy-container {
+        flex: 1;
+        min-height: 44px;
+        justify-content: center;
+    }
+
+    .copy-button {
+        padding: 8px 12px;
+    }
+
+    .show-qr-button {
+        min-height: 44px;
+        width: 100%;
+        max-width: 200px;
+        padding: 12px 20px;
+    }
+}
+
+/* タッチデバイス対応 */
+@media (hover: none) {
+    .copy-button:active,
+    .show-qr-button:active {
+        transform: scale(0.95);
+        transition: transform 0.1s;
+    }
+
+    .copy-container {
+        touch-action: manipulation;
+    }
+}

@@ -97,3 +97,48 @@
         transform: translateY(0);
     }
 }
+
+/* 既存のモーダルスタイルに追加 */
+
+.modal-content {
+    margin: min(15vh, 15%) auto;
+    width: min(90%, 400px);
+    padding: clamp(1rem, 5vw, 2rem);
+}
+
+/* モバイルデバイス対応 */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 10% auto;
+        width: 85%;
+    }
+
+    .close-button {
+        width: 48px;  /* タッチターゲットサイズ拡大 */
+        height: 48px;
+        right: 10px;
+        top: 10px;
+    }
+
+    #qr-container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+/* セーフエリア対応 */
+@supports (padding: env(safe-area-inset-bottom)) {
+    .modal {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
+/* モバイルでのスクロール改善 */
+@media (max-height: 600px) {
+    .modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+        margin: 5vh auto;
+    }
+}
